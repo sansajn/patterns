@@ -1,4 +1,5 @@
 /*.o
 /*.kdev4
 /.sconsign.dblite
-/simple_builder 
+/simple_builder
+/groovy_style_builder
