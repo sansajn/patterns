@@ -1,4 +1,4 @@
-/* groovy style builder pattern implementation from [MDP] chapter 2 */
+/* groovy style builder design pattern implementation from [MDP] chapter 2 */
 #include <string>
 #include <vector>
 #include <utility>

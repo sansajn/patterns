@@ -1,4 +1,4 @@
-/* simple builder implementation of builder design pattern */
+/* simple builder design pattern implementation from [MDP] chapter 2 */
 #include <string>
 #include <vector>
 #include <memory>

@@ -3,3 +3,4 @@ cpp17 = Environment(
 
 cpp17.Program('simple_builder.cpp')
 cpp17.Program('groovy_style_builder.cpp')
+cpp17.Program('composite_builder.cpp')
