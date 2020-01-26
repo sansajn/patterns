@@ -1,7 +1,16 @@
 # about
 
-repository contains design pattern implementations and samples from various sources like [mdp], ...
+repository contains design patterns sample implementations from various sources like [mdp], ...
 
+## build
+
+[SCons](https://scons.org/) is used as a build tool, so to build samples just fire
+
+```bash
+scons -j8
+```
+
+command from patterns directory.
 
 ### builder
 
