@@ -12,6 +12,19 @@ scons -j8
 
 command from patterns directory.
 
+## samples
+
+Structural patterns ...
+
+### flyweight
+
+`flyweight.cpp`: custom flyweight (`user` class) design pattern implementation compared with `boost::flyweight` (`user2` class) implementation from [mdp], chapter 11
+
+TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).
+
+
+Creational patterns ...
+
 ### builder
 
 `simple_builder.cpp`: simple builder design pattern implementation from [mdp], chapter 2, pg. 28
