@@ -23,6 +23,11 @@ Structural patterns ...
 TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).
 
 
+### proxy
+
+`lazybitmap.cpp`: lazy loaded bitmap as a sample for (virtual) proxy design pattern from [mdp], chapter 12
+
+
 Creational patterns ...
 
 ### builder
