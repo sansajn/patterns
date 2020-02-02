@@ -4,23 +4,23 @@ repository contains design patterns sample implementations from various sources 
 
 ## build
 
-[SCons](https://scons.org/) is used as a build tool, so to build samples just fire
+[SCons](https://scons.org/) software construction tool is used to build samples, so just fire
 
 ```bash
 scons -j8
 ```
 
-command from patterns directory.
+command from patterns directory and you're done.
 
-## samples
+# samples
 
-Structural patterns ...
+## structural patterns
 
 ### flyweight
 
 `flyweight.cpp`: custom flyweight (`user` class) design pattern implementation compared with `boost::flyweight` (`user2` class) implementation from [DPiM], chapter 11
 
-TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).
+*TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).*
 
 
 ### proxy
@@ -28,7 +28,7 @@ TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/
 `lazybitmap.cpp`: lazy loaded bitmap as a sample for (virtual) proxy design pattern from [DPiM], chapter 12
 
 
-Creational patterns ...
+## creational patterns
 
 ### builder
 
@@ -39,7 +39,7 @@ Creational patterns ...
 `composite_builder.cpp`: multiple composition builder design pattern implementation from [DPiM], chapter 2, pg. 31
 
 
-Behavioural patterns ...
+## behavioural patterns
 
 ### template method
 
