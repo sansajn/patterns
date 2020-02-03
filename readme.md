@@ -45,7 +45,10 @@ command from patterns directory and you're done.
 
 `board_game.cpp`: generic board game algorithm and inheritance based chess implementation as sample for template method design pattern from [DPiM], chapter 23
 
+`operation_solver.cpp`: math, list operation solving algorithm sample implemented using template method design pattern
+
 
 [DPiM]: https://leanpub.com/design-patterns-modern-cpp/	"Design Patterns in Modern C++"
+
 
 Adam Hlavatovič

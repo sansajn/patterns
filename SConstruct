@@ -13,3 +13,4 @@ cpp17.Program('lazybitmap.cpp')
 
 # behavioral patterns
 cpp17.Program('board_game.cpp')
+cpp17.Program('operation_solver.cpp')
