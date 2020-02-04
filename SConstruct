@@ -10,6 +10,7 @@ cpp17.Program('composite_builder.cpp')
 # structural patterns
 cpp17.Program('flyweight.cpp')
 cpp17.Program('flyweight_tiles.cpp')
+cpp17.Program('flyweight_forest.cpp')
 cpp17.Program('lazybitmap.cpp')
 
 # behavioral patterns

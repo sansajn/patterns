@@ -20,7 +20,9 @@ command from patterns directory and you're done.
 
 `flyweight.cpp`: custom flyweight (`user` class) design pattern implementation compared with `boost::flyweight` (`user2` class) implementation from [DPiM], chapter 11
 
-`flyweight_tiles.cpp`: tile based world implented using flyweight design pattern (bare pointer without any magic) from [GmPP], chapter 3
+`flyweight_tiles.cpp`: Tile based world implented using flyweight design pattern (bare pointer without any magic) from [GmPP], chapter 3. There are three basic implementations there 1) enum based (`tile_enum` and `tile_byte`), 2) object based (`tile_field`) and 3) object hierarchy based (`tile_virtual`).
+
+`flyweight_forest.cpp`: Tree representation for forest renderer flyweight design pattern sample from [GmPP], chapter 3. Class `heavy_tree::tree` splited into to classes `split_tree::tree_model` and `split_tree::tree` where `tree_mode` it is our *flyweight*. 
 
 *TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).*
 

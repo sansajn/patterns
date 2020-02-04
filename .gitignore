@@ -6,6 +6,7 @@
 /composite_builder
 /flyweight
 /flyweight_tiles
+/flyweight_forest
 /lazybitmap
 /board_game
 /operation_solver
