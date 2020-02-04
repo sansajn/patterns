@@ -20,6 +20,8 @@ command from patterns directory and you're done.
 
 `flyweight.cpp`: custom flyweight (`user` class) design pattern implementation compared with `boost::flyweight` (`user2` class) implementation from [DPiM], chapter 11
 
+`flyweight_tiles.cpp`: tile based world implented using flyweight design pattern (bare pointer without any magic) from [GmPP], chapter 3
+
 *TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).*
 
 
@@ -49,6 +51,16 @@ command from patterns directory and you're done.
 
 
 [DPiM]: https://leanpub.com/design-patterns-modern-cpp/	"Design Patterns in Modern C++"
+
+[GmPP]: https://gameprogrammingpatterns.com/	"Game Programming Patterns"
+
+[HoDP]: https://www.packtpub.com/application-development/hands-design-patterns-c	"Hands-On Design Patterns with C++"
+
+[CwMC]: http://leanpub.com/concurrencywithmodernc	"Concurrency with Modern C++"
+
+[PTBB]: https://www.apress.com/gp/book/9781484243978	"Pro TBB"
+
+[FPiC]: https://www.manning.com/books/functional-programming-in-c-plus-plus	"Functional Programming in C++"
 
 
 Adam Hlavatovič

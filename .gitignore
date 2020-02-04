@@ -5,6 +5,7 @@
 /groovy_style_builder
 /composite_builder
 /flyweight
+/flyweight_tiles
 /lazybitmap
 /board_game
 /operation_solver
