@@ -14,6 +14,8 @@ command from patterns directory and you're done.
 
 # samples
 
+Creational, structural and behaviour classic [GoF] design patterns.
+
 ## structural patterns
 
 ### flyweight
@@ -52,6 +54,12 @@ command from patterns directory and you're done.
 `operation_solver.cpp`: math, list operation solving algorithm sample implemented using template method design pattern
 
 
+## game patterns
+
+for now all non [GoF] patterns from [GmPP] ...
+
+
+
 [DPiM]: https://leanpub.com/design-patterns-modern-cpp/	"Design Patterns in Modern C++"
 
 [GmPP]: https://gameprogrammingpatterns.com/	"Game Programming Patterns"
@@ -63,6 +71,8 @@ command from patterns directory and you're done.
 [PTBB]: https://www.apress.com/gp/book/9781484243978	"Pro TBB"
 
 [FPiC]: https://www.manning.com/books/functional-programming-in-c-plus-plus	"Functional Programming in C++"
+
+[GoF]: https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8	"Design Patterns: Elements of Reusable Object-Oriented Software"
 
 
 Adam Hlavatovič
