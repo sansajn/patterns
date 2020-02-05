@@ -51,6 +51,10 @@ command from patterns directory and you're done.
 
 `operation_solver.cpp`: math, list operation solving algorithm sample implemented using template method design pattern
 
+### command
+
+`unit_command.cpp`: User input and game unit commands sample implemented by command design pattern from [GmPP], chapter 2. There are three samples there. The first one user input handling with commands (`input_handling_command`). The second one actor aware user input handling with commands (`command_actors`). The last one undo command for game unit sample (`undo`).
+
 
 [DPiM]: https://leanpub.com/design-patterns-modern-cpp/	"Design Patterns in Modern C++"
 

@@ -1,3 +1,4 @@
+/* user input and game unit commands sample implemented by command design pattern from [GmPP], chapter 2 */
 #include <iostream>
 using std::cout;
 using std::endl;
