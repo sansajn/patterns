@@ -55,6 +55,8 @@ public:
 		else if (is_pressed(BUTTON_B)) _button_b->execute();
 	}
 	
+	// methods to bind commands ...
+	
 private:
 	command * _button_x,
 		* _button_y,
@@ -63,6 +65,81 @@ private:
 };
 
 }  // input_handling_command
+
+
+namespace command_actors {
+
+class game_actor  // player character
+{
+public:
+	void jump() {}
+	void fire_gun() {}
+	void swap_weapon() {}
+	void lurch_innefectivity() {}
+};
+
+struct command
+{
+	virtual ~command() {}
+	virtual void execute(game_actor & actor) = 0;
+};
+
+struct jump_command : public command
+{
+	void execute(game_actor & actor) override {actor.jump();}
+};
+
+struct fire_command : public command
+{
+	void execute(game_actor & actor) override {actor.fire_gun();}
+};
+
+struct swap_weapon_command : public command
+{
+	void execute(game_actor & actor) override {actor.swap_weapon();}
+};
+
+struct lurch_command : public command
+{
+	void execute(game_actor & actor) override {actor.lurch_innefectivity();}
+};
+
+class input_handler
+{
+public:
+	command * handle_input()
+	{
+		if (is_pressed(BUTTON_X)) return _button_x;
+		else if (is_pressed(BUTTON_Y)) return _button_y;
+		else if (is_pressed(BUTTON_A)) return _button_a;
+		else if (is_pressed(BUTTON_B)) return _button_b;
+	}
+	
+private:
+	command * _button_x,
+		* _button_y,
+		* _button_a,
+		* _button_b;
+};
+
+void execute_command()
+{
+	input_handler input;
+	game_actor player;
+	
+	command * cmd = input.handle_input();
+	if (cmd)
+	{
+		cmd->execute(player);
+	}
+	
+	// use(actor)
+}
+
+}  // command_actors
+
+
+
 
 int main(int argc, char * argv[])
 {
