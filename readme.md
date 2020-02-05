@@ -24,7 +24,7 @@ command from patterns directory and you're done.
 
 `flyweight_forest.cpp`: Tree representation for forest renderer flyweight design pattern sample from [GmPP], chapter 3. Class `heavy_tree::tree` splited into to classes `split_tree::tree_model` and `split_tree::tree` where `tree_mode` it is our *flyweight*. 
 
-*TODO: Add more samples from flyweight [examples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).*
+*TODO: Add more flyweight pattern boost [samples](https://www.boost.org/doc/libs/1_68_0/libs/flyweight/doc/examples.html).*
 
 
 ### proxy
