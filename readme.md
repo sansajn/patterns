@@ -1,10 +1,10 @@
 # about
 
-repository contains design patterns sample implementations from various sources like [DPiM], ...
+Patterns repository contains design patterns sample implementations from various sources like [DPiM], [GmPP] and others ...
 
 ## build
 
-[SCons](https://scons.org/) software construction tool is used to build samples, so just fire
+We used [SCons](https://scons.org/) software construction tool so building samples is easy, just fire
 
 ```bash
 scons -j8
