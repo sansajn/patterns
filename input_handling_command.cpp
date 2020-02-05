@@ -7,7 +7,9 @@ enum button
 	BUTTON_X,
 	BUTTON_Y,
 	BUTTON_A,
-	BUTTON_B
+	BUTTON_B,
+	BUTTON_UP,
+	BUTTON_DOWN
 };
 
 bool is_pressed(button b) {return false;}
@@ -138,7 +140,94 @@ void execute_command()
 
 }  // command_actors
 
+namespace undo {  // undo sample
 
+class unit
+{
+public:
+	int x() {return 0;}
+	int y() {return 0;}
+	void move_to(int x, int y) {}
+};
+
+	namespace undo_before {  // before undo implementation
+
+struct command
+{
+	virtual ~command() {}
+	virtual void execute() = 0;
+};
+
+class move_unit_command : public command
+{
+public:
+	move_unit_command(unit * u, int x, int y)
+		: _u{u}, _x{x}, _y{y}
+	{}
+	
+	void execute() override {_u->move_to(_x, _y);}
+	
+private:
+	unit * _u;
+	int _x, _y;
+};
+
+unit * get_selected_unit() {return nullptr;}
+
+command * handle_input()
+{
+	unit * u = get_selected_unit();
+	
+	if (is_pressed(BUTTON_UP))  // move the unit up one
+	{
+		int dest_y = u->y() - 1;
+		return new move_unit_command{u, u->x(), dest_y};
+	}
+	
+	if (is_pressed(BUTTON_DOWN))
+	{
+		int dest_y = u->y() + 1;
+		return new move_unit_command{u, u->x(), dest_y};
+	}
+	
+	return nullptr;
+}
+		
+		
+	}  // undo_before
+	
+	namespace undo_after {  // after undo implementation
+	
+struct command
+{
+	virtual ~command() {}
+	virtual void execute() = 0;
+	virtual void undo() = 0;
+};
+
+class move_unit_command : public command
+{
+public:
+	move_unit_command(unit * u, int x, int y)
+		: _u{u}, _x{x}, _y{y}, _before_x{x}, _before_y{y}
+	{}
+	
+	void execute() override {
+		_before_x = _u->x();
+		_before_y = _u->y();
+		_u->move_to(_x, _y);
+	}
+	
+	void undo() override {_u->move_to(_before_x, _before_y);}
+	
+private:
+	unit * _u;
+	int _x, _y, _before_x, _before_y;
+};
+		
+	}  // undo_after
+	
+}  // undo
 
 
 int main(int argc, char * argv[])
